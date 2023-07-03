@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Geolocalización App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <div class="coordinates">{{ latitud }}, {{ longitud }}</div>
+    <ion-button (click)="geoPromise()" expand="full">Geolocalización con Promesas</ion-button>
+    <ion-button (click)="geoObservable()" expand="full">Geolocalización con Observables</ion-button>
+  </div>
+</ion-content>
